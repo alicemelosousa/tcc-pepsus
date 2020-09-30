@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCC PEPSUS</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  </head>
+
+
+<body>
+
+<section class="accessibility-bar-wrapper">
+      <div class="container">
+        <div>
+          <a
+              href="#conteudo"
+              class="d-inline-block"
+              accesskey="1"
+              title="Link para ir ao conteúdo"
+              ><span class="numero-acessibilidade">1</span> Ir para o conteúdo </a
+              >
+          <a
+              href="#footer"
+              class="d-inline-block"
+              accesskey="3"
+              title="Ir para o rodapé"
+              ><span class="numero-acessibilidade">2</span>Ir para o rodapé </a
+          >
+        </div>
+        <div class="custom-control custom-switch" style="display: flex; align-items: baseline;">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Alto Contraste</label>
+        </div>
+      </div>
+    </section>
+    <header class="header">
+      <div class="container">
+        <h3>Curso de Especialização em Saúde da Família (PEPSUS)</h3>
+        <h1> Cronograma de apresentações de TCC</h1>
+      </div>
+    </header>
+
+<section id="conteudo" class="container">
+
+<h1>Pesquise na tabela</h1>
+ <p>
+<div class="w100"><input type="text" id="search_field2" placeholder="Nome do aluno" data-qjs=".table tbody tr" autofocus="" class="form-control"></div>
+<p>
+
+<table class="table table-condensed table-bordered table-hover">
+<thead class="thead-dark">
+<tr><td>Nome do aluno</td><td>Nome do orientador</td><td>Título do TCC</td><td>Data </td><td>Horário da apresentação</td><td>Sala</td><td>Link</td></tr>
+</thead>
+
+<tbody>
+
+<tr><td>Allyne Beatriz da Silva</td><td>Maria</td><td>"   "</td><td> 12/10/2020 </td><td>10:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
+</td></tr>
+<tr><td>Maria Alice de Melo Sousa</td><td>João</td><td>"   "</td><td>12/10/2020</td><td>11:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
+</td></tr>
+<tr><td>Caio Farias</td><td>Maria</td><td>"   "</td><td>12/10/2020</td><td>12:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
+</td></tr>
+<tr><td>Carol Mayer</td><td>Maria</td><td>"   "</td><td>12/10/2020</td><td>15:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
+</td></tr>
+<tr><td>Deyvison</td><td>João</td><td>"   "</td><td>12/10/2020</td><td>16:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
+</td></tr>
+<tr><td>Elionai</td><td>Maria</td><td>"   "</td><td>12/10/2020</td><td>17:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
+</td></tr>
+<tr><td>Lorena</td><td>Maria</td><td>"   "</td><td>13/10/2020</td><td>10:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
+</td></tr>
+<tr><td>Maria Luiza</td><td>João</td><td>"   "</td><td>13/10/2020</td><td>11:00</td><td>204 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
+</td></tr>
+<tr><td>Maurício</td><td>João</td><td>"   "</td><td>13/10/2020</td><td>12:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
+</td></tr>
+<tr><td>Gabriela Xavier</td><td>João</td><td>"   "</td><td>13/10/2020</td><td>14:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
+</td></tr>
+
+</tbody>
+</table>
+</div>
+
+ <span class="line"></span>
+  <footer id="footer" class="container">
+    <img src="logos/logo-lais.png" alt="LAIS">
+    <img src="logos/logo-sedis.png" alt="SEDIS">
+    <img id="ufrn" src="logos/ufrn.png" alt="UFRN">
+    <img id="pepsus" src="logos/logo-pepsus.png" alt="PEPSUS">
+
+  </footer>
+    
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/dark-mode-switch.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+<script src="qjsearch.min.js"></script>
+<script>
+$("#search_field,#search_field2").qjsearch();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

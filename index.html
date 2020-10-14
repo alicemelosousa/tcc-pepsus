@@ -153,16 +153,16 @@
                   break;
                 }
                 if (data.user[i].nome !== "") {
-                  var html = "<tr>";
-                  html += "<td>" + data.user[i].nome + "</td>";
-                  html += "<td>" + data.user[i].orientador + "</td>";
-                  html += "<td>" + data.user[i].titulo + "</td>";
-                  html += "<td>" + data.user[i].data + "</td>";
-                  html += "<td>" + data.user[i].horario + "</td>";
-                  html += "<td>" + data.user[i].sala + "</td>";
-                  html += "<td> <a href>" + data.user[i].link  + "</td>";
+                  var html = '<tr>';
+                  html += '<td>' + data.user[i].nome + '</td>';
+                  html += '<td>' + data.user[i].orientador + '</td>';
+                  html += '<td>' + data.user[i].titulo + '</td>';
+                  html += '<td>' + data.user[i].data + '</td>';
+                  html += '<td>' + data.user[i].horario + '</td>';
+                  html += '<td>' + data.user[i].sala + '</td>';
+                  html += '<td> <a href='+ data.user[i].link + ' target="_blank">' + data.user[i].link  + '</td>';
                   html += "</tr>";
-                  $("table tbody").append(html);
+                  $('table tbody').append(html);
                 }
               
             }

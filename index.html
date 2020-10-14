@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="style/bootstrap.min.css" />
     <link rel="stylesheet" href="style/style.css" />
+    <link href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
     
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   </head>
@@ -34,6 +35,13 @@
               title="Ir para o rodapé"
               ><span class="numero-acessibilidade">2</span>Ir para o rodapé </a
           >
+          <a 
+            href="https://avasus.ufrn.br/mod/chat/gui_ajax/index.php?id=15"
+            class="d-inline-block"
+            accesskey="4"
+            title="Preciso de ajuda"
+          ><span class="numero-acessibilidade">3</span>Preciso de ajuda </a
+          >
         </div>
         <div class="custom-control custom-switch" style="display: flex; align-items: baseline;">
             <input type="checkbox" class="custom-control-input" id="darkSwitch">
@@ -49,43 +57,119 @@
     </header>
 
 <section id="conteudo" class="container">
+<h1><center> ORIENTAÇÕES BÁSICAS PARA O SEMINÁRIO DE APRESENTAÇÃO DO TCC DO PEPSUS </h1>
+<h2><center> PLANEJE TUDO COM ANTECEDÊNCIA!</h2>
+<p>
+<div class="orientaçoes">
+  <ul>
+    <li>Organize-se para permanecer online durante todo o turno de sua apresentação, elas serão em blocos de 5 a 10 alunos por sala e todos devem estar online no início das apresentações para receber todas as orientações. Fique à vontade para convidar outras pessoas para assistir a sua apresentação. </li>
+    <li>Ensaie a sua apresentação! Isso ajuda, por exemplo, a controlar o tempo de apresentação que deverá ser de 5 a 10 minutos. </li>
+    <li>Tenha internet, câmera e microfone! Recomendamos que teste a sua câmera e o seu microfone no dia anterior. </li>
+    <li>No dia e turno agendado acesse o módulo de “Seminário de Apresentação do TCC” e clique em “Acesse o Seminário Aqui” (seguindo as demais instruções) ou acesse o link enviado pelo seu Facilitador no Espaço de Interação Aluno/FP. Caso tenha dificuldades acesse o Link “<a href="https://avasus.ufrn.br/mod/chat/gui_ajax/index.php?id=15">Preciso de Ajuda</a>”. </li>
+    <li>Esteja atento ao dia e horário agendado para sua apresentação. Não serão alterados, salvo em condições extremamente excepcionais. </li>
+  </ul>
+    
+    <img src="images/img1.png" alt="orientaçao1">
 
+
+  <h1><center>ELEGÂNCIA É UMA VIRTUDE: NORMAS DE ETIQUETA PARA A APRESENTAÇÃO DE TCC</h1></center>
+<p>
+    <ul> 
+      <li> Solicite acesso à Sala 5 minutos antes. Seja pontual, pois as orientações serão apresentadas no início do turno (pontualmente às 8h, 13h ou 18h a depender do seu turno agendado).</li>
+      <li> Entre na sala de apresentação, com o microfone e a câmera desligados, de preferência utilize fones de ouvido para minimizar ruídos do ambiente.</li>
+      <li> A banca irá solicitar que você ligue a câmera para tirar uma foto comprovando sua presença na apresentação de TCC. </li>
+      <li> A apresentação de TCC será gravada para registro da equipe PEPSUS. </li>
+      <li> Cronômetro ligado! Se a apresentação do TCC ultrapassar o tempo máximo de 10 minutos, ela será interrompida pela banca que irá iniciar a arguição do especializando.</li>
+      <li> Na etapa de arguição cada membro da banca irá fazer uma pergunta ou comentário sobre o TCC.</li>
+      <li> Ao aluno que não comparecer no horário agendado para a apresentação de TCC será imputada falta e atribuída nota zero.</li>      
+    </ul>
+
+  <h1><center> CONHECENDO AS SALAS ONDE TEREMOS AS DEFESAS</h1>
+<p> 
+
+  <ul>
+    <li>As apresentações ocorrerão através de um link da sala que dará acesso ao Google Meet; </li>
+    <li> Basta clicar no link da sala que abrirá uma janela para que cliques, então, em participar;</li>
+    A tela, após sua entrada ser autorizada, é a seguinte:
+  </ul>
+
+<b> Google meet: </b>
+<p>
+  <img src="images/img2.png" alt="orientaçao2">
+<p>
+<h2><center> <b> Desejamos uma ótima apresentação!</b>
+
+</div>
+<h>
+<p>
 <h1>Pesquise na tabela</h1>
 
 <div class="w100"><input type="text" id="search_field2" placeholder="" data-qjs=".table tbody tr" autofocus="" class="form-control"></div>
  <h4> Insira o que você procura. Exemplo: Nome do Aluno, Nome do Orientador, Data, etc </h4>
  <p>
  
+ 
 <table class="table table-condensed table-bordered table-hover">
 <thead class="thead-dark">
-<tr><td>Nome do aluno</td><td>Nome do orientador</td><td>Título do TCC</td><td>Data </td><td>Horário da apresentação</td><td>Sala</td><td>Link</td></tr>
-</thead>
+          <tr>
+            <td>Nome do aluno</td>
+            <td>Nome do orientador</td>
+            <td>Título do TCC</td>
+            <td>Data</td>
+            <td>Horário da apresentação</td>
+            <td>Sala</td>
+            <td>Link</td>
+          </tr>
+        </thead>
+        <tbody id="tdata"></tbody>
+      </table>
+      <p id="msg"></p>
+      <div class="loader"></div>
+    </div>
 
-<tbody>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<tr><td>Allyne Beatriz da Silva</td><td>Maria</td><td>"   "</td><td> 12/10/2020 </td><td>10:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
-</td></tr>
-<tr><td>Maria Alice de Melo Sousa</td><td>João</td><td>"   "</td><td>12/10/2020</td><td>11:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
-</td></tr>
-<tr><td>Caio Farias</td><td>Maria</td><td>"   "</td><td>12/10/2020</td><td>12:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
-</td></tr>
-<tr><td>Carol Mayer</td><td>Maria</td><td>"   "</td><td>12/10/2020</td><td>15:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
-</td></tr>
-<tr><td>Deyvison</td><td>João</td><td>"   "</td><td>12/10/2020</td><td>16:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
-</td></tr>
-<tr><td>Elionai</td><td>Maria</td><td>"   "</td><td>12/10/2020</td><td>17:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
-</td></tr>
-<tr><td>Lorena</td><td>Maria</td><td>"   "</td><td>13/10/2020</td><td>10:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
-</td></tr>
-<tr><td>Maria Luiza</td><td>João</td><td>"   "</td><td>13/10/2020</td><td>11:00</td><td>204 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
-</td></tr>
-<tr><td>Maurício</td><td>João</td><td>"   "</td><td>13/10/2020</td><td>12:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
-</td></tr>
-<tr><td>Gabriela Xavier</td><td>João</td><td>"   "</td><td>13/10/2020</td><td>14:00</td><td>202 ECT</td><td><a href="https:meet.google.com//">meet.google.com.br</a>
-</td></tr>
+    <script>
+      var $loading = $(".loader").hide();
+      $(document)
+        .ajaxStart(function () {
+          $loading.show();
+        })
+        .ajaxStop(function () {
+          $loading.hide();
+        });
 
-</tbody>
-</table>
+      (function () {
+        $.get(
+          "https://script.google.com/macros/s/AKfycbwo5mCSw8c-Mmzhw2sGI7u6vpaDAPMr8ClgAxBa80_oX1_IaIc/exec",
+          function (data) {
+            console.log(data);
+            
+              for (var i = 0; i < data.user.length; i++) {
+                if (data.user[i].nome == "") {
+                  $("p#msg").text("Não há dados cadastrados");
+                  break;
+                }
+                if (data.user[i].nome !== "") {
+                  var html = "<tr>";
+                  html += "<td>" + data.user[i].nome + "</td>";
+                  html += "<td>" + data.user[i].orientador + "</td>";
+                  html += "<td>" + data.user[i].titulo + "</td>";
+                  html += "<td>" + data.user[i].data + "</td>";
+                  html += "<td>" + data.user[i].horario + "</td>";
+                  html += "<td>" + data.user[i].sala + "</td>";
+                  html += "<td> <a href>" + data.user[i].link  + "</td>";
+                  html += "</tr>";
+                  $("table tbody").append(html);
+                }
+              
+            }
+          }
+        );
+      })();
+    </script>
 </div>
 
  <span class="line"></span>

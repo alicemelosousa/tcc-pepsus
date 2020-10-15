@@ -18,97 +18,102 @@
 
 <body>
 
-<section class="accessibility-bar-wrapper">
-      <div class="container">
-        <div>
-          <a
-              href="#conteudo"
-              class="d-inline-block"
-              accesskey="1"
-              title="Link para ir ao conteúdo"
-              ><span class="numero-acessibilidade">1</span> Ir para o conteúdo </a
-              >
-          <a
-              href="#footer"
-              class="d-inline-block"
-              accesskey="3"
-              title="Ir para o rodapé"
-              ><span class="numero-acessibilidade">2</span>Ir para o rodapé </a
-          >
-          <a 
-            href="https://avasus.ufrn.br/mod/chat/gui_ajax/index.php?id=15"
-            class="d-inline-block"
-            accesskey="4"
-            title="Preciso de ajuda"
-          ><span class="numero-acessibilidade">3</span>Preciso de ajuda </a
-          >
-        </div>
-        <div class="custom-control custom-switch" style="display: flex; align-items: baseline;">
-            <input type="checkbox" class="custom-control-input" id="darkSwitch">
-            <label class="custom-control-label" for="darkSwitch">Alto Contraste</label>
-        </div>
-      </div>
-    </section>
     <header class="header">
       <div class="container">
         <h3>Curso de Especialização em Saúde da Família (PEPSUS)</h3>
-        <h1> Cronograma de apresentações de TCC</h1>
+        <h1> II Seminário de apresentação do TCC</h1>
       </div>
     </header>
 
-<section id="conteudo" class="container">
-<h1><center> ORIENTAÇÕES BÁSICAS PARA O SEMINÁRIO DE APRESENTAÇÃO DO TCC DO PEPSUS </h1>
-<h2><center> PLANEJE TUDO COM ANTECEDÊNCIA!</h2>
-<p>
-<div class="orientaçoes">
-  <ul>
-    <li>Organize-se para permanecer online durante todo o turno de sua apresentação, elas serão em blocos de 5 a 10 alunos por sala e todos devem estar online no início das apresentações para receber todas as orientações. Fique à vontade para convidar outras pessoas para assistir a sua apresentação. </li>
-    <li>Ensaie a sua apresentação! Isso ajuda, por exemplo, a controlar o tempo de apresentação que deverá ser de 5 a 10 minutos. </li>
-    <li>Tenha internet, câmera e microfone! Recomendamos que teste a sua câmera e o seu microfone no dia anterior. </li>
-    <li>No dia e turno agendado acesse o módulo de “Seminário de Apresentação do TCC” e clique em “Acesse o Seminário Aqui” (seguindo as demais instruções) ou acesse o link enviado pelo seu Facilitador no Espaço de Interação Aluno/FP. Caso tenha dificuldades acesse o Link “<a href="https://avasus.ufrn.br/mod/chat/gui_ajax/index.php?id=15">Preciso de Ajuda</a>”. </li>
-    <li>Esteja atento ao dia e horário agendado para sua apresentação. Não serão alterados, salvo em condições extremamente excepcionais. </li>
-  </ul>
     
-    <img src="images/img1.png" alt="orientaçao1">
 
 
-  <h1><center>ELEGÂNCIA É UMA VIRTUDE: NORMAS DE ETIQUETA PARA A APRESENTAÇÃO DE TCC</h1></center>
-<p>
-    <ul> 
-      <li> Solicite acesso à Sala 5 minutos antes. Seja pontual, pois as orientações serão apresentadas no início do turno (pontualmente às 8h, 13h ou 18h a depender do seu turno agendado).</li>
-      <li> Entre na sala de apresentação, com o microfone e a câmera desligados, de preferência utilize fones de ouvido para minimizar ruídos do ambiente.</li>
-      <li> A banca irá solicitar que você ligue a câmera para tirar uma foto comprovando sua presença na apresentação de TCC. </li>
-      <li> A apresentação de TCC será gravada para registro da equipe PEPSUS. </li>
-      <li> Cronômetro ligado! Se a apresentação do TCC ultrapassar o tempo máximo de 10 minutos, ela será interrompida pela banca que irá iniciar a arguição do especializando.</li>
-      <li> Na etapa de arguição cada membro da banca irá fazer uma pergunta ou comentário sobre o TCC.</li>
-      <li> Ao aluno que não comparecer no horário agendado para a apresentação de TCC será imputada falta e atribuída nota zero.</li>      
-    </ul>
+    <section id="conteudo" class="container">
+  
+    <a href="https://avasus.ufrn.br/mod/chat/gui_ajax/index.php?id=15"><img src="images/precisodeajuda.png" id="ajuda"> </a>
+    
+    <div class="botoes">
+    
+  
 
-  <h1><center> CONHECENDO AS SALAS ONDE TEREMOS AS DEFESAS</h1>
-<p> 
+      
+       <button id="b1" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#orientacoes" aria-expanded="true" aria-controls="orientacoes">  <center> ORIENTAÇÕES BÁSICAS PARA O SEMINÁRIO DE APRESENTAÇÃO DO TCC DO PEPSUS </button> 
 
-  <ul>
-    <li>As apresentações ocorrerão através de um link da sala que dará acesso ao Google Meet; </li>
-    <li> Basta clicar no link da sala que abrirá uma janela para que cliques, então, em participar;</li>
-    A tela, após sua entrada ser autorizada, é a seguinte:
-  </ul>
-
-<b> Google meet: </b>
-<p>
-  <img src="images/img2.png" alt="orientaçao2">
-<p>
-<h2><center> <b> Desejamos uma ótima apresentação!</b>
-
+        <div class="info">  
+          <div class="collapse multi-collapse" id="orientacoes">
+            <div class="card card-body">
+              <button id="x" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#orientacoes" aria-expanded="true" aria-controls="orientacoes.close()"></button> 
+                <h1><center> ORIENTAÇÕES BÁSICAS PARA O SEMINÁRIO DE APRESENTAÇÃO DO TCC DO PEPSUS </h1>
+                <h2><center> PLANEJE TUDO COM ANTECEDÊNCIA!</h2>
+                <p>
+                <div class="orientaçoes">
+                  <ul>
+                    <li>Organize-se para permanecer online durante todo o turno de sua apresentação, elas serão em blocos de 5 a 10 alunos por sala e todos devem estar online no início das apresentações para receber todas as orientações. Fique à vontade para convidar outras pessoas para assistir a sua apresentação. </li>
+                    <li>Ensaie a sua apresentação! Isso ajuda, por exemplo, a controlar o tempo de apresentação que deverá ser de 5 a 10 minutos. </li>
+                    <li>Tenha internet, câmera e microfone! Recomendamos que teste a sua câmera e o seu microfone no dia anterior. </li>
+                    <li>No dia e turno agendado acesse o módulo de “Seminário de Apresentação do TCC” e clique em “Acesse o Seminário Aqui” (seguindo as demais instruções) ou acesse o link enviado pelo seu Facilitador no Espaço de Interação Aluno/FP. Caso tenha dificuldades acesse o Link “<a href="https://avasus.ufrn.br/mod/chat/gui_ajax/index.php?id=15">Preciso de Ajuda</a>”. </li>
+                    <li>Esteja atento ao dia e horário agendado para sua apresentação. Não serão alterados, salvo em condições extremamente excepcionais. </li>
+                  </ul>
+          </div>
+        </div> 
+      </div> 
 </div>
-<h>
+
+<button id="b2" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#elegancia" aria-expanded="true" aria-controls="elegancia"> ELEGÂNCIA É UMA VIRTUDE: NORMAS DE ETIQUETA PARA A APRESENTAÇÃO DE TCC</button> 
+          <div class="info">
+            <div class="collapse multi-collapse" id="elegancia">
+              <div class="card card-body">
+                <button id="x" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#elegancia" aria-expanded="true" aria-controls="elegancia.close()"></button> 
+                 <h1><center>ELEGÂNCIA É UMA VIRTUDE: NORMAS DE ETIQUETA PARA A APRESENTAÇÃO DE TCC</h1></center>
+                  <p>
+                      <ul> 
+                        <li> Solicite acesso à Sala 5 minutos antes. Seja pontual, pois as orientações serão apresentadas no início do turno (pontualmente às 8h, 13h ou 18h a depender do seu turno agendado).</li>
+                        <li> Entre na sala de apresentação, com o microfone e a câmera desligados, de preferência utilize fones de ouvido para minimizar ruídos do ambiente.</li>
+                        <li> A banca irá solicitar que você ligue a câmera para tirar uma foto comprovando sua presença na apresentação de TCC. </li>
+                        <li> A apresentação de TCC será gravada para registro da equipe PEPSUS. </li>
+                        <li> Cronômetro ligado! Se a apresentação do TCC ultrapassar o tempo máximo de 10 minutos, ela será interrompida pela banca que irá iniciar a arguição do especializando.</li>
+                        <li> Na etapa de arguição cada membro da banca irá fazer uma pergunta ou comentário sobre o TCC.</li>
+                        <li> Ao aluno que não comparecer no horário agendado para a apresentação de TCC será imputada falta e atribuída nota zero.</li>      
+                      </ul>
+              </div>
+           </div>
+          </div>  
+    
+<button id="b3" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#salas" aria-expanded="true" aria-controls="salas"> CONHECENDO AS SALAS ONDE TEREMOS AS DEFESAS</button>   
+        <div class="info">
+            <div class="collapse multi-collapse" id="salas">
+              <div class="card card-body">
+                <button id="x" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#salas" aria-expanded="true" aria-controls="salas.close()"></button> 
+                <h1><center> CONHECENDO AS SALAS ONDE TEREMOS AS DEFESAS</h1>
+                <p> 
+
+                  <ul>
+                    <li>As apresentações ocorrerão através de um link da sala que dará acesso ao Google Meet; </li>
+                    <li> Basta clicar no link da sala que abrirá uma janela para que cliques, então, em participar;</li>
+                    A tela, após sua entrada ser autorizada, é a seguinte:
+                  </ul>    
+                  <b><h1> Google meet </b>
+                    <p>
+                    <center>
+                      <img src="images/img2.png" alt="orientaçao2"> </center>
+                    <p>
+                    <h2><center> <b> Desejamos uma ótima apresentação!</b> </center>
+
+                    <h>        
+              </div>
+           </div>
+          </div>
+</div>
 <p>
-<h1>Pesquise na tabela</h1>
+</div>
+<h1>Localize a apresentação que você deseja participar:</h1>
 
 <div class="w100"><input type="text" id="search_field2" placeholder="" data-qjs=".table tbody tr" autofocus="" class="form-control"></div>
  <h4> Insira o que você procura. Exemplo: Nome do Aluno, Nome do Orientador, Data, etc </h4>
  <p>
- 
- 
+
+
+
 <table class="table table-condensed table-bordered table-hover">
 <thead class="thead-dark">
           <tr>

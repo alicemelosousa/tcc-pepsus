@@ -124,7 +124,7 @@ a:hover {
 
 }
 .header h1 {
-  color:#E74C3C;;
+  color:#E74C3C;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
 }
@@ -227,4 +227,107 @@ footer img {
 }
 
 
+.botoes {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
 
+.botoes button {
+  
+  width: 65%;
+  max-width: 80%;
+  margin: auto;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+  font-size: 1.1em;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.botoes h1 {
+  color: #E74C3C;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 1rem ;
+  margin-top: 0%;
+}
+
+.info {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align:justify;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+#x {
+  
+  width: 40px;
+  height: 40px;
+  max-width: 30px;
+  max-height:30px;
+  position: relative;
+  left: 50%;
+  cursor: pointer;
+  background: url('../logos/close.png'); 
+  display: block;
+  border: none;
+}
+
+
+#b1 {
+  background-color:  #E74C3C;
+  border-color: #E74C3C;
+  vertical-align: middle;
+}
+#b1:focus {
+  box-shadow: #505050;
+}
+#b2 {
+  background-color:  #E74C3C;
+  border-color:  #E74C3C;
+  vertical-align: middle;
+}
+#b2:focus {
+  box-shadow: #505050;
+}
+
+#b3 {
+  background-color:  #E74C3C;
+  border-color:  #E74C3C;
+  vertical-align: middle;
+  text-align: center;
+}
+#b3:focus {
+  box-shadow: #505050;
+}
+
+#orientacoes .card-header {
+  background-color:  #E74C3C;
+}
+#ajuda {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  height: 70px;
+  width: auto;
+}

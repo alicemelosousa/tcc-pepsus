@@ -1,12 +1,8 @@
-
-
-
 body {
   font-family: "open-sans", sans-serif;
   font-size: 16px;
-  color: #E74C3C;
+  color: #414141;
 }
-
 
 .form-control {
   margin-bottom: 10px;
@@ -23,7 +19,7 @@ h4 {
 
 .accessibility-bar-wrapper {
   position: relative;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   color: #3d3d3d;
   min-height: 50px;
   padding-top: 10px;
@@ -48,70 +44,66 @@ h4 {
 
 .numero-acessibilidade {
   background-color: #fff;
-  color: #E74C3C;
+  color: #e74c3c;
   padding: 0 2px 0 3px;
   margin-right: 4px;
-  border: 1px solid #E74C3C;
+  border: 1px solid #e74c3c;
 }
 
-[data-theme=dark] {
+[data-theme="dark"] {
   background-color: #111 !important;
- 
 }
-[data-theme=dark] .accessibility-bar-wrapper {
+[data-theme="dark"] .accessibility-bar-wrapper {
   background-color: #111 !important;
   color: #eee !important;
 }
-[data-theme=dark] .accessibility-bar-wrapper a {
+[data-theme="dark"] .accessibility-bar-wrapper a {
   color: #eee !important;
 }
-[data-theme=dark] .numero-acessibilidade {
+[data-theme="dark"] .numero-acessibilidade {
   color: #eee !important;
   background-color: #333 !important;
   border: 1px solid #eee;
 }
-[data-theme=dark] footer img {
+[data-theme="dark"] footer img {
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
 }
 
-[data-theme=dark] .thead-dark {
+[data-theme="dark"] .thead-dark {
   color: black;
-
 }
 
-[data-theme=dark] .header{
-  color: whitesmoke;
-  background-color: #111;
-} 
-[data-theme=dark] .header h1{
+[data-theme="dark"] .header {
   color: whitesmoke;
   background-color: #111;
 }
-
-[data-theme=dark] h1{
+[data-theme="dark"] .header h1 {
   color: whitesmoke;
   background-color: #111;
 }
 
-[data-theme=dark] .table-hover {
+[data-theme="dark"] h1 {
+  color: whitesmoke;
+  background-color: #111;
+}
+
+[data-theme="dark"] .table-hover {
   color: black;
   background-color: rgb(190, 190, 190);
-  
 }
 
-[data-theme=dark] .orientaçoes{
+[data-theme="dark"] .orientaçoes {
   color: whitesmoke;
   background-color: #111;
 }
 
-
 a {
-  color: #E74C3C;
+  color: #e74c3c;
 }
 
 a:hover {
-  color: #E74C3C;
+  color: #e74c3c;
 }
 
 .header {
@@ -121,34 +113,32 @@ a:hover {
   display: flex;
   justify-content: center;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
-
 }
 .header h1 {
-  color:#E74C3C;
-  font-family: 'Open Sans', sans-serif;
+  color: #e74c3c;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
 }
 
 h1 {
-  color:#E74C3C;;
-  font-family: 'Open Sans', sans-serif;
+  color: #e74c3c;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
-
 }
 
-h3 { 
+h3 {
   font-family: "open-sans", sans-serif;
   font-size: 1.5em;
-  color:#E74C3C;
+  color: #e74c3c;
 }
 
 h2 {
   font-family: "open-sans", sans-serif;
   font-size: 1.2em;
-  color:#E74C3C;
+  color: #e74c3c;
 }
 
-#conteudo{
+#conteudo {
   min-height: 70vh;
 }
 
@@ -159,28 +149,23 @@ h2 {
   text-align: justify;
 }
 
-
 /** estilizando a tabela **/
 
-
-td, tr {
+td,
+tr {
   text-align: center;
   vertical-align: center;
 }
 
-tr:nth-child(even) {background:  #ff6c5c9f;}
-tr:nth-child(odd) {background: white}
-
-
-
-
-
+tr:nth-child(even) {
+  background: #ebebeb9f;
+}
 
 .info {
   color: black;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  text-align:justify;
+  text-align: justify;
   width: 65%;
   max-width: 80%;
   margin: auto;
@@ -188,21 +173,33 @@ tr:nth-child(odd) {background: white}
   padding-bottom: 10px;
   flex-direction: column;
   justify-content: center;
-
 }
 
-
-
-.card-header {
+/* .card-header {
   color: #fff;
   padding: 0.5rem .75rem;
   margin-top: 0.75rem ;
   border-radius: 0.15rem !important;
   
+} */
+
+li {
+  margin-bottom: 12px;
+}
+
+.card-header button {
+  color: #e74c3c;
+}
+
+.accordion {
+  margin-bottom: 60px;
+}
+
+.table {
+  margin-top: 40px;
 }
 
 footer {
-  
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -211,34 +208,27 @@ footer {
 footer img {
   height: 30px;
   width: auto;
- 
 }
 
 #ufrn {
   height: 45px;
   width: auto;
-  
 }
 
 #pepsus {
   height: 47px;
   width: auto;
-  
 }
 
-
 .botoes {
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 10px;
   text-align: center;
-  
 }
 
 .botoes button {
-  
   width: 65%;
   max-width: 80%;
   margin: auto;
@@ -248,26 +238,25 @@ footer img {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  
+
   font-size: 1.1em;
-  font-family: 'Open Sans', sans-serif;
-  
+  font-family: "Open Sans", sans-serif;
 }
 
 .botoes h1 {
-  color: #E74C3C;
-  font-family: 'Open Sans', sans-serif;
+  color: #e74c3c;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1em;
   text-align: center;
-  margin-bottom: 1rem ;
+  margin-bottom: 1rem;
   margin-top: 0%;
 }
 
 .info {
   color: black;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  text-align:justify;
+  text-align: justify;
   width: 100%;
   max-width: 100%;
   margin: auto;
@@ -275,36 +264,32 @@ footer img {
   padding-bottom: 10px;
   flex-direction: column;
   justify-content: center;
-
 }
 
-
 #x {
-  
   width: 40px;
   height: 40px;
   max-width: 30px;
-  max-height:30px;
+  max-height: 30px;
   position: relative;
   left: 50%;
   cursor: pointer;
-  background: url('../logos/close.png'); 
+  background: url("../logos/close.png");
   display: block;
   border: none;
 }
 
-
 #b1 {
-  background-color:  #E74C3C;
-  border-color: #E74C3C;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
   vertical-align: middle;
 }
 #b1:focus {
   box-shadow: #505050;
 }
 #b2 {
-  background-color:  #E74C3C;
-  border-color:  #E74C3C;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
   vertical-align: middle;
 }
 #b2:focus {
@@ -312,8 +297,8 @@ footer img {
 }
 
 #b3 {
-  background-color:  #E74C3C;
-  border-color:  #E74C3C;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
   vertical-align: middle;
   text-align: center;
 }
@@ -322,12 +307,137 @@ footer img {
 }
 
 #orientacoes .card-header {
-  background-color:  #E74C3C;
+  background-color: #e74c3c;
 }
 #ajuda {
   position: fixed;
-  bottom: 0px;
-  right: 0px;
+  bottom: 50px;
+  right: 30px;
   height: 70px;
   width: auto;
+}
+
+.table-bordered td,
+.table-bordered th {
+  text-transform: capitalize;
+}
+
+.header {
+  background: url(../images/96037548-5dd50400-0e3c-11eb-9087-cb7be657c1a1.jpg)
+    center no-repeat;
+  background-size: cover;
+  padding: 90px 20px;
+}
+
+.header h1 {
+  color: white;
+  font-size: 36px;
+}
+
+[data-ripple] {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-effect {
+  position: absolute;
+  border-radius: 9999px;
+  animation: ripple-animation 2s;
+}
+
+@keyframes ripple-animation {
+  from {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(100);
+    opacity: 0;
+  }
+}
+
+.aks-accordion {
+  margin: 20px 0 60px 0;
+}
+
+.aks-accordion h4 {
+  color: #414141;
+  font-size: 16px;
+}
+.aks-accordion-row {
+}
+.aks-accordion-item {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-bottom: 12px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+.aks-accordion-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.aks-accordion-item-icon {
+  width: 25px;
+  height: 25px;
+  background: #e74c3c;;
+  border-radius: 9999px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  text-align: center;
+}
+.aks-accordion-item-icon svg {
+  width: 15px;
+  fill: white;
+  margin: 0 auto;
+}
+.aks-accordion-item-title {
+  width: 90%;
+  text-align: left;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+.aks-accordion-item-title h4 {
+  margin: 0;
+}
+.aks-accordion-item-content {
+  display: none;
+  width: 100%;
+  padding-top: 12px;
+  padding-right: 8px;
+  padding-bottom: 0;
+  padding-left: 42px;
+  overflow: hidden;
+  word-break: break-word;
+  width: 88%;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.aks-accordion-item.opened .aks-accordion-item-icon-open {
+  display: none;
+}
+.aks-accordion-item-icon-close {
+  display: none;
+}
+.aks-accordion-item.opened .aks-accordion-item-icon-close {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .aks-accordion {
+    width: 100%;
+  }
+  .aks-accordion-item-content {
+    padding-left: 11px;
+    width: 92%;
+  }
 }

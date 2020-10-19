@@ -431,6 +431,28 @@ footer img {
 .aks-accordion-item.opened .aks-accordion-item-icon-close {
   display: block;
 }
+a.button-large {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  background: #e74c3c;
+  box-shadow: 0 3px 0 rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 3px 0 rgba(0,0,0,.5);
+  -moz-box-shadow: 0 3px 0 rgba(0,0,0,.5);
+  -o-box-shadow: 0 3px 0 rgba(0,0,0,.5);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 12px 40px;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 700;
+}
 
 @media screen and (max-width: 500px) {
   .aks-accordion {
